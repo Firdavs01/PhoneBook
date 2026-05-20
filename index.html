@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="/search" method="get">
+            <label for="search">Поиск (необязательно):</label>
+            <input type="search" id="search" name="query" placeholder="Введите ваш запрос...">
+            <button type="submit" id="searchBtn">Найти</button>
+        </form>
+
+        <form>
+            <input type="text" id="nameInput" placeholder="Your name">
+            <input type="text" id="telInput" placeholder="Your phone number">
+        </form>
+        <button id="addBtn">add</button>
+        <ul id="contactsList"></ul>
+    </div>
+        
+
+    <script src="main.js"></script>
+</body>
+</html>
