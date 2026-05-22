@@ -42,8 +42,8 @@ function findUser(book, userName) {
     
         const name = userName.toLowerCase().trim()
     
-        return book.filter(contact => {
-            contact.nameInpValue.toLowerCase().includes(name)
+        return [...book].filter(([contactName]) => {
+            return contactName.toLowerCase().includes(name)
         })
     } catch(err) {
         console.log(err, "ай донт кнов")

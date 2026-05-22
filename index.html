@@ -9,16 +9,16 @@
 <body>
 
     <div class="container">
-        <form action="/search" method="get">
+        <div class="search-block">
             <label for="search">Поиск (необязательно):</label>
             <input type="search" id="search" name="query" placeholder="Введите ваш запрос...">
             <button type="submit" id="searchBtn">Найти</button>
-        </form>
+        </div>
 
-        <form>
+        <div class="add-block">
             <input type="text" id="nameInput" placeholder="Your name">
             <input type="text" id="telInput" placeholder="Your phone number">
-        </form>
+        </div>
         <button id="addBtn">add</button>
         <ul id="contactsList"></ul>
     </div>
