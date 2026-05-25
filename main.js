@@ -12,6 +12,14 @@ const list = document.querySelector("#contactsList");
 const map = new Map()
 
 function addContact() {
+    if (isNaN(Number(telInput.value)) || telInput.value.trim() === '') {
+        alert("Вы ввели неправильный номер")
+        
+        nameInp.value = ''
+        telInput.value = ''
+        return 
+    }
+
     const nameInpValue = nameInp.value
     const telInpValue = telInput.value
 
